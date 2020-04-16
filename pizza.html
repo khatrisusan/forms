@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pizza.css" />
+    <title>Order Pizza</title>
+  </head>
+  <body>
+    <h1>Order Pizza Here</h1>
+    <form action="pizza.html">
+      <label for="pizza-type">Pizza Type</label>
+      <select id="pizza-type" name="pizza-type">
+        <option value="veg">Vegetarian</option>
+        <option value="chicken">Chicken</option>
+        <option value="okse">Okse</option>
+        <option value="pepperoni">Pepperoni</option>
+      </select>
+      <h2>Pizza size</h2>
+      <input type="radio" id="type" name="p-size" value="Large" />
+      <label for="type">Large</label>
+      <input type="radio" id="type" name="p-size" value="Medium" />
+      <label for="type">Medium</label>
+      <input type="radio" id="type" name="p-size" value="Small" />
+      <label for="type">Small</label>
+      <h2>Topping</h2>
+      <input type="checkbox" id="ham" name="topping" value="ham" />
+      <label for="ham"> Ham</label><br />
+      <input type="checkbox" id="baccon" name="topping" value="baccon" />
+      <label for="baccon"> Baccon</label><br />
+      <input type="checkbox" id="m-room" name="topping" value="mushroom" />
+      <label for="m-room"> Mushroom</label><br />
+      <input type="checkbox" id="olive" name="topping" value="olive" />
+      <label for="olive"> Olive</label><br />
+      <h2>Delivary Method</h2>
+      <input type="radio" id="method" name="method" value="m-pay" />
+      <label for="method">MobilePay</label>
+      <input type="radio" id="method" name="method" value="Card" />
+      <label for="type">card</label>
+      <input type="radio" id="method" name="method" value="Cash" />
+      <label for="type">Cash</label>
+      <div>
+        <label for="address">Address</label>
+        <input type="address" placeholder="your full address" id="address" />
+      </div>
+      <h2>Terms and condition</h2>
+      <input
+        type="checkbox"
+        id="term"
+        name="accept"
+        value="accept"
+        value="checked"
+      />
+      <label for="term"> I understand trems and conditions</label><br />
+      <button type="submit">Order my pizza</button>
+    </form>
+    <script src="pizza.js"></script>
+  </body>
+</html>
